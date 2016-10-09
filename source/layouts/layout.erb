@@ -1,7 +1,9 @@
 <%= partial 'partials/head' %>
 <%= partial 'partials/navbar' %>
 
-<%= yield %>
+<body class="<%= page_classes %>">
+    <%= yield %>
+</body>
 
 <%= partial 'partials/footer' %>
 <%= partial 'partials/foot' %>
