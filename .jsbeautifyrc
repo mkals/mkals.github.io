@@ -1,5 +1,6 @@
 {
     "bb.beautify.languages": {
+        "erb": "html",
         "html.erb": "html"
     }
 }
