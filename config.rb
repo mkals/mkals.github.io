@@ -42,7 +42,8 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-page "/projects/*", :layout => "project"
+page "/coop/*", :layout => "layout"
+page "/coop/*", :layout => "layout"
 
 
 end
