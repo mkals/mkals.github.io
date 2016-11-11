@@ -51,40 +51,6 @@ img {
     margin: 1ream 0 0;
 }
 
-#stage {
-    background: url('/images/Aurland2.jpg') center center no-repeat;
-    background-size: cover;
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#holmestrand-stage {
-    background: url('/images/holmestrand-consept.jpg') center center no-repeat;
-    background-size: cover;
-    color: white;
-    height: 40%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#stage-caption {
-    font-size: 1.4rem;
-    font-weight: 200;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#stage-caption h1 {
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 #about-me {
     max-height: 40rem;
 }
@@ -130,6 +96,49 @@ img {
 */
 
 
+/* Stages */
+
+#stage {
+    background-size: cover;
+    color: white;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#stage.holmestrand {
+    background: url('/images/stages/holmestrand.jpg') center center no-repeat;
+}
+
+#stage.race-quad {
+    background: url('/images/stages/race-quad.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#stage.about {
+    background: url('/images/stages/aurland.jpg') center center no-repeat;
+}
+
+#stage.printer {
+    background: url('/images/stages/robo.jpg') center center no-repeat;
+}
+
+#stage .caption {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#stage h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
 /* Float classes */
 
 .float-lg {
@@ -165,7 +174,7 @@ img {
 
 /* Small devices (tablets, 768px and up) */
 
-@media screen and (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
     .float-lg {
         display: flex;
         align-items: center;
@@ -175,7 +184,7 @@ img {
 
 /* Medium devices (desktops, 992px and up) */
 
-@media screen and (min-width: @screen-md-min) {
+@media (min-width: 992px) {
     .float-md {
         display: flex;
         align-items: center;
@@ -185,7 +194,7 @@ img {
 
 /* Large devices (large desktops, 1200px and up) */
 
-@media screen and (min-width: @screen-lg-min) {
+@media (min-width: 1200px) {
     .float-sm {
         display: flex;
         align-items: center;
