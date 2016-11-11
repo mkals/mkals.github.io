@@ -17,6 +17,13 @@ h5 {
     color: #333
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+
 h6 {
     text-transform: uppercase;
     font-weight: bold;
@@ -73,21 +80,12 @@ img {
     text-transform: uppercase;
 }
 
-#page-caption h1 {
-    font-weight: bold;
-    font-size: 2.5rem;
-    padding-top: 2rem;
-    text-transform: uppercase;
-}
-
 .feature-content {
     padding: 1rem 0;
-    overflow: hidden;
 }
 
 #about-me {
     max-height: 40rem;
-    overflow: auto;
 }
 
 .feature-dark {
