@@ -19,9 +19,14 @@ h5 {
 
 h1 {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top: 2rem;
     text-transform: uppercase;
+}
+
+h1.display-3 {
+    padding-top: 0rem;
+    font-size: 3rem;
 }
 
 h6 {
@@ -80,10 +85,6 @@ img {
     text-transform: uppercase;
 }
 
-.feature-content {
-    padding: 1rem 0;
-}
-
 #about-me {
     max-height: 40rem;
 }
@@ -99,11 +100,6 @@ img {
 
 .feature-light {
     background: #EAEAEA;
-}
-
-.feature-content img {
-    height: auto;
-    margin-top: 0;
 }
 
 #main-footer {
@@ -134,10 +130,63 @@ img {
 */
 
 
+/* Float classes */
+
+.float-lg {
+    padding: 1rem 0;
+}
+
+.float-md {
+    padding: 1rem 0;
+}
+
+.float-sm {
+    padding: 1rem 0;
+}
+
+.float-lg img {
+    height: auto;
+    margin-top: 0;
+}
+
+.float-md img {
+    height: auto;
+    margin-top: 0;
+}
+
+.float-sm img {
+    height: auto;
+    margin-top: 0;
+}
+
+
 /* Media Queries */
 
-@media screen and (min-width: 400px) {
-    .feature-content {
+
+/* Small devices (tablets, 768px and up) */
+
+@media screen and (min-width: @screen-sm-min) {
+    .float-lg {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media screen and (min-width: @screen-md-min) {
+    .float-md {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media screen and (min-width: @screen-lg-min) {
+    .float-sm {
         display: flex;
         align-items: center;
     }
