@@ -24,6 +24,10 @@ h5 {
     color: #333;
 }
 
+h2 {
+    padding-top: 2rem;
+}
+
 h6 {
     text-transform: uppercase;
     font-weight: bold;
@@ -68,7 +72,14 @@ img {
 }
 
 
-/* Menu and footer */
+/* Special cases */
+
+#holmestrand-my-work {
+    padding: 5rem;
+}
+
+
+/* Navbar and footer */
 
 #main-footer {
     background: #262F36;
@@ -84,6 +95,9 @@ img {
 #stage.holmestrand {
     background: url('/images/stages/holmestrand.jpg') center center no-repeat;
     background-size: cover;
+    align-items: stretch;
+    padding: 3rem;
+    color: 262F36;
 }
 
 #stage.race-quad {
@@ -114,6 +128,7 @@ img {
 #stage h1 {
     margin: 0 auto;
     color: white;
+    text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.50);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -123,15 +138,15 @@ img {
 /* Float classes */
 
 .float-lg {
-    padding: 1.2rem 0;
+    padding: 4rem 0;
 }
 
 .float-md {
-    padding: 1.2rem 0;
+    padding: 4rem 0;
 }
 
 .float-sm {
-    padding: 1.2rem 0;
+    padding: 4rem 0;
 }
 
 .float-lg img {
