@@ -145,6 +145,11 @@ img {
     background-size: cover;
 }
 
+#stage.ray {
+    background: url('/images/stages/ray.jpg') center center no-repeat;
+    background-size: cover;
+}
+
 #stage {
     color: white;
     height: 60%;
