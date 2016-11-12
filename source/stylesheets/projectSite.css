@@ -29,6 +29,7 @@ h6 {
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
+    padding-top: 1rem;
 }
 
 img {
@@ -67,7 +68,7 @@ img {
 }
 
 
-/* Header and footer */
+/* Menu and footer */
 
 #main-footer {
     background: #262F36;
@@ -80,14 +81,6 @@ img {
 
 /* Stages */
 
-#stage {
-    color: white;
-    height: 60%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
 #stage.holmestrand {
     background: url('/images/stages/holmestrand.jpg') center center no-repeat;
     background-size: cover;
@@ -96,6 +89,8 @@ img {
 #stage.race-quad {
     background: url('/images/stages/race-quad.jpg') center center no-repeat;
     background-size: cover;
+    align-items: stretch;
+    padding: 2rem;
 }
 
 #stage.about {
@@ -108,19 +103,20 @@ img {
     background-size: cover;
 }
 
-#stage .caption {
-    padding: -5rem;
-    font-size: 3rem;
-    font-weight: 300;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: right;
+#stage {
+    color: white;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #stage h1 {
+    margin: 0 auto;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
