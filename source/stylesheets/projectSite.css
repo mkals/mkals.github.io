@@ -75,11 +75,13 @@ img {
 /* Special cases */
 
 #holmestrand-my-work {
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #website-general {
-    padding: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 #website-general h1 {
