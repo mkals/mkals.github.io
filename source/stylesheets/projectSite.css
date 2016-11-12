@@ -78,6 +78,32 @@ img {
     padding: 5rem;
 }
 
+#website-general {
+    padding: 10rem;
+}
+
+#website-general h1 {
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 1.2rem;
+}
+
+#website-elements {
+    padding: 5rem;
+    align-content: center;
+    text-align: center;
+}
+
+#website-elements h3 {
+    padding-top: 2rem;
+}
+
+#website-elements img {
+    border-radius: 1.4rem;
+}
+
 
 /* Navbar and footer */
 
