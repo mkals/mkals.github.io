@@ -1,0 +1,315 @@
+/*
+projectSite .CSS
+Morten Kals, 2016
+
+Thanks to Brad Hussey for great guidance in this section.
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #6c6f73;
+}
+
+pre {
+    padding-top: 1rem;
+    text-rendering: optimizeLegibility;
+    color: #6c6f73;
+    font-size: .7rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #464646;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    padding-top: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.blockquote {
+    font-size: 1.6rem;
+    color: #333;
+    border: none;
+    padding: 0;
+}
+
+.blockquote-footer {
+    margin: 1ream 0 0;
+}
+
+
+/* feature backgrounds */
+
+.feature-dark {
+    background: #262F36;
+    color: white;
+}
+
+.feature-dark h2 {
+    color: white;
+}
+
+.feature-light {
+    background: #EAEAEA;
+}
+
+
+/* Special cases */
+
+#hello {}
+
+#highlights {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#holmestrand-my-work {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#website-general {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#website-general h1 {
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 1.2rem;
+}
+
+#website-elements {
+    padding: 5rem;
+    align-content: center;
+    text-align: center;
+}
+
+#website-elements h3 {
+    padding-top: 2rem;
+}
+
+#website-elements img {
+    border-radius: 1.4rem;
+}
+
+#noober-octoprint img {
+    height: 16rem;
+    border-radius: 4rem;
+}
+
+
+/* Navbar and footer */
+
+#main-footer {
+    background: #262F36;
+    color: white;
+    padding: 2rem 0;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+
+/* Stages */
+
+#stage.holmestrand {
+    background: url('/images/stages/holmestrand.jpg') center center no-repeat;
+    background-size: cover;
+    align-items: stretch;
+    padding: 3rem;
+    color: 262F36;
+}
+
+#stage.race-quad {
+    background: url('/images/stages/race-quad.jpg') center center no-repeat;
+    background-size: cover;
+    align-items: stretch;
+    padding: 2rem;
+}
+
+#stage.aurland {
+    background: url('/images/stages/aurland.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#stage.danmark {
+    background: url('/images/stages/danmark.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#stage.speedrider {
+    background: url('/images/stages/speedrider.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#stage.tandem {
+    background: url('/images/stages/tandem.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#stage.family {
+    background: url('/images/stages/trysil.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#stage.printer {
+    background: url('/images/stages/robo.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#stage.ray {
+    background: url('/images/stages/ray.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#stage.noober {
+    background: url('/images/stages/noober.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#stage {
+    color: white;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#stage h1 {
+    margin: 0 auto;
+    color: white;
+    text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.50);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Float classes */
+
+.float-lg {
+    padding: 4rem 0;
+}
+
+.float-md {
+    padding: 4rem 0;
+}
+
+.float-sm {
+    padding: 4rem 0;
+}
+
+.float-lg img {
+    height: auto;
+    margin-top: 0;
+}
+
+.float-md img {
+    height: auto;
+    margin-top: 0;
+}
+
+.float-sm img {
+    height: auto;
+    margin-top: 0;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+    #mynavbar {
+        clear: both;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .float-lg {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .float-md {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .float-sm {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Embed youtube */
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+    padding-bottom: 75%;
+}
