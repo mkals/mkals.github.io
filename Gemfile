@@ -14,5 +14,3 @@ gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 
 gem 'bootstrap-sass', require: false
-
-gem 'middleman-gh-pages'
