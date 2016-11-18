@@ -79,6 +79,11 @@ img {
 
 #hello {}
 
+.card-inverse h4,
+.card-inverse p {
+    color: white;
+}
+
 #highlights {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -119,6 +124,10 @@ img {
 #noober-octoprint img {
     height: 16rem;
     border-radius: 4rem;
+}
+
+.img-rounded {
+    border-radius: 15px;
 }
 
 
