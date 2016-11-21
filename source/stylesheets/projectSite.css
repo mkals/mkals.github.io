@@ -2,7 +2,7 @@
 projectSite .CSS
 Morten Kals, 2016
 
-Thanks to Brad Hussey for great guidance in this section.
+Thanks to Brad Hussey for great css and styling guidance.
 */
 
 html,
@@ -99,7 +99,17 @@ img {
     padding-bottom: 10rem;
 }
 
-#website-general h1 {
+#cam-quad-general {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#noober-team {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section-heading {
     margin: 0 auto;
     font-weight: bold;
     text-transform: uppercase;
@@ -128,6 +138,20 @@ img {
 
 .img-rounded {
     border-radius: 15px;
+}
+
+#carousel-littlep {
+    max-width: 500px;
+    margin-bottom: 3rem;
+}
+
+#cam-quad-folding img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#cam-quad-air img {
+    max-height: 90%;
 }
 
 
@@ -173,6 +197,12 @@ img {
 
 #stage.speedrider {
     background: url('/images/stages/speedrider.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#stage.jump {
+    background: url('/images/stages/jump.jpg') center center no-repeat;
     background-size: cover;
     height: 100%;
 }
