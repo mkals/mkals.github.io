@@ -11,9 +11,11 @@ body {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     color: #6c6f73;
+    font:
 }
 
 pre {
@@ -29,6 +31,7 @@ h3,
 h4,
 h5 {
     color: #464646;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -36,6 +39,7 @@ h2 {
 }
 
 h6 {
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.9rem;
