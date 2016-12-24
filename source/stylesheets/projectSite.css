@@ -238,6 +238,18 @@ img {
     background-size: cover;
 }
 
+#stage.noober-team {
+    background: url('/images/stages/noober-team.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#stage.scanner {
+    background: url('/images/scanner/scanner.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
 #stage {
     color: white;
     height: 60%;

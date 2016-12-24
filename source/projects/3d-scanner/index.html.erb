@@ -1,3 +1,60 @@
----
-title: Morten's Project Site
----
+<div id="stage" class="scanner">
+    <h1 class="display-3">3D-Scanner</h1>
+</div>
+
+<section id="scanner-intro" class="feature-light">
+    <div class="container">
+        <div class="row ">
+            <div class="float-lg">
+                <div class="col-lg-5 col-md-12 feature-caption">
+                    <p>
+                        I am on a team of five that is working to build a 3D-scanner. Our hardware design follows some of the ideas used in the Ray in that the frame is made from interlocking, laser-cut hardboard for cheap and easy manufacture. Metal rods are used for greater modularity. A Raspberry Pi model 3 functions as the central control unit, interfacing the stepper, cameras, laser and memory-export.
+                    </p>
+                    <p>
+                        When plugging in a memory-stick, the scan starts automatically. The scanner uses two cameras to take pictures each of the object (one with the line laser on and one with it off) for each position. A stepper-motor rotates the turn-table with a potential resolution of 0.2 degrees per step. The images are written directly to the memory-stick and taken to the computer for post-processing.
+                    </p>
+                    <p>
+                        We have run successful image captures, but we require greater consistency of lighting etc. from the cameras to obtain a good result when converting the images to a point cloud. Work is therefore currently being put into converting the Python-code to lower levels where we have greater control of timing and camera settings.
+                    </p>
+                </div>
+                <div class="col-lg-7 col-md-12 feature-content">
+                    <img src="/images/scanner/work.jpg" class="img-fluid " alt="ray">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="scanner-rapid" class="feature-light">
+    <div class="container">
+        <div class="row ">
+            <div class="float-lg">
+                <div class="col-lg-7 col-md-12 feature-content">
+                    <img src="/images/scanner/rapid.jpg" class="img-fluid " alt="ray">
+                </div>
+                <div class="col-lg-5 col-md-12 feature-caption">
+                    <p>
+                        Rapid is a student team at UBC. The group designs and maintains rapid prototyping technologies such as 3d-printers.
+                    </p>
+                    <p>
+                        <a target="_blank" class="btn btn-secondary" href="http://ubc-rapid.com/blog/" role="button">UBC Rapid »</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="scanner-team">
+    <div class="container">
+        <div class="row ">
+            <div class="float-lg">
+                <div class="col-lg-12 feature-content">
+                    <img src="/images/scanner/team.jpg" class="img-fluid " alt="ray-team">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
