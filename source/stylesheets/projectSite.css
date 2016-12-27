@@ -80,10 +80,6 @@ img {
 
 /* Special cases */
 
-ul li ul li a {
-    text-decoration: none; /* Not working yet, hide underline from stage titles */
-}
-
 .card-inverse h4,
 .card-inverse p {
     color: white;
