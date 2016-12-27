@@ -45,7 +45,8 @@ configure :build do
 page "/coop/*", :layout => "layout"
 page "/coop/*", :layout => "layout"
 
-
+# Deploy gem
+# https://github.com/middleman-contrib/middleman-deploy
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   # Optional Settings
