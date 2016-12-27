@@ -15,7 +15,6 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     color: #6c6f73;
-    font:
 }
 
 pre {
@@ -81,7 +80,9 @@ img {
 
 /* Special cases */
 
-#hello {}
+ul li ul li a {
+    text-decoration: none; /* Not working yet, hide underline from stage titles */
+}
 
 .card-inverse h4,
 .card-inverse p {
