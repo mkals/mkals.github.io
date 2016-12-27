@@ -8,7 +8,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="/stylesheets/ekko-lightbox.css" rel="stylesheet">
+
+
+    <!-- Custom font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/stylesheets/projectSite.css">
@@ -16,14 +23,6 @@
     <title>
         Morten's Project Site
     </title>
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -47,7 +46,7 @@
                     <!-- dropdown-menu-right -->
                     <a class="dropdown-item" href="/projects/ray">The Ray - ENPH 253</a>
                     <a class="dropdown-item" href="/projects/noober">Noober - 3D-Printer Hub</a>
-                    <!--<a class="dropdown-item" href="/projects/3d-scanner">Rapid - 3D-Scanner</a>-->
+                    <a class="dropdown-item" href="/projects/3d-scanner">Rapid - 3D-Scanner</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -81,10 +80,64 @@
 
 
 
-        <!-- FOOT -->
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <!-- Load Java-script modules -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+        <script src="/javascripts/ekko-lightbox.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+        <!-- for documentation only -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function($) {
+                // delegate calls to data-toggle="lightbox"
+                $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
+                    event.preventDefault();
+                    return $(this).ekkoLightbox({
+                        onShown: function() {
+                            if (window.console) {
+                                return console.log('Checking our the events huh?');
+                            }
+                        },
+                        onNavigate: function(direction, itemIndex) {
+                            if (window.console) {
+                                return console.log('Navigating ' + direction + '. Current item: ' + itemIndex);
+                            }
+                        }
+                    });
+                });
+
+                //Programmatically call
+                $('#open-image').click(function(e) {
+                    e.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+                $('#open-youtube').click(function(e) {
+                    e.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+
+                // navigateTo
+                $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                    event.preventDefault();
+
+                    return $(this).ekkoLightbox({
+                        onShown: function() {
+
+                            this.modal().on('click', '.modal-footer a', function(e) {
+
+                                e.preventDefault();
+                                this.navigateTo(2);
+
+                            }.bind(this));
+
+                        }
+                    });
+                });
+            });
+
+        </script>
 
 </html>

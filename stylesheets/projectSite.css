@@ -11,6 +11,7 @@ body {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     color: #6c6f73;
@@ -29,6 +30,7 @@ h3,
 h4,
 h5 {
     color: #464646;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -36,6 +38,7 @@ h2 {
 }
 
 h6 {
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.9rem;
@@ -76,8 +79,6 @@ img {
 
 
 /* Special cases */
-
-#hello {}
 
 .card-inverse h4,
 .card-inverse p {
@@ -232,6 +233,18 @@ img {
 #stage.noober {
     background: url('/images/stages/noober.jpg') center center no-repeat;
     background-size: cover;
+}
+
+#stage.noober-team {
+    background: url('/images/stages/noober-team.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#stage.scanner {
+    background: url('/images/scanner/scanner.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
 }
 
 #stage {
