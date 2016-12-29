@@ -118,6 +118,14 @@ img {
     padding-bottom: 0.4rem;
 }
 
+#scanner-team {
+    padding-bottom: 3rem;
+}
+
+#scanner-team div.float-lg {
+    padding-bottom: 0.4rem;
+}
+
 .section-heading {
     margin: 0 auto;
     font-weight: bold;
