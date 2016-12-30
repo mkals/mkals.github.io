@@ -44,9 +44,9 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Team Projects</a>
                 <div class="dropdown-menu">
                     <!-- dropdown-menu-right -->
-                    <a class="dropdown-item" href="/projects/ray">The Ray - ENPH 253</a>
-                    <a class="dropdown-item" href="/projects/noober">Noober - 3D-Printer Hub</a>
-                    <a class="dropdown-item" href="/projects/3d-scanner">Rapid - 3D-Scanner</a>
+                    <a class="dropdown-item" href="/projects/ray">The Ray, ENPH 253 Project</a>
+                    <a class="dropdown-item" href="/projects/noober">Noober 3D Printer Hub</a>
+                    <a class="dropdown-item" href="/projects/3d-scanner">Rapid 3D Scanner</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
                     <!--<a class="dropdown-item" href="/projects/pi-gimbal">PiGimbal</a>-->
                     <a class="dropdown-item" href="/projects/race-quad">Race-Quad</a>
                     <a class="dropdown-item" href="/projects/cam-quad">Cam-Quad</a>
-                    <a class="dropdown-item" href="/projects/3d-printer">3D-Printer</a>
+                    <a class="dropdown-item" href="/projects/3d-printer">3D Printer</a>
                     <a class="dropdown-item" href="/projects/ios-development">iOS Development</a>
                 </div>
             </li>
@@ -71,9 +71,29 @@
     <body class="projects projects_3d-scanner projects_3d-scanner_index">
         <a href="/images/scanner/scanner.jpg" data-toggle="lightbox" data-gallery="scanner-gallery" style="text-decoration:none">
     <div id="stage" class="scanner">
-        <h1 class="display-3">3D-Scanner</h1>
+        <h1 class="display-3">Rapid 3D-Scanner</h1>
     </div>
 </a>
+
+<section id="scanner-rapid">
+    <div class="container">
+        <div class="row ">
+            <div class="float-lg">
+                <div class="col-lg-7 col-md-12 feature-content">
+                    <img src="/images/scanner/rapid.jpg" class="img-fluid " alt="rapid">
+                </div>
+                <div class="col-lg-5 col-md-12 feature-caption">
+                    <p>
+                        Rapid is a student team at UBC. The group designs and maintains rapid prototyping technologies such as 3d-printers. I have been a member of Rapid since first year of university. I am currently in a team of five that is working to build a 3D-scanner.
+                    </p>
+                    <p>
+                        <a target="_blank" class="btn btn-primary" style="width:100%" href="http://ubc-rapid.com/blog/" role="button">UBC Rapid</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section id="scanner-intro" class="feature-light">
     <div class="container">
@@ -81,13 +101,13 @@
             <div class="float-lg">
                 <div class="col-lg-5 col-md-12 feature-caption">
                     <p>
-                        I am on a team of five that is working to build a 3D-scanner. Our hardware design follows some of the ideas used in the Ray in that the frame is made from interlocking, laser-cut hardboard for cheap and easy manufacture. Metal rods are used for greater modularity. A Raspberry Pi model 3 functions as the central control unit, interfacing the stepper, cameras, laser and memory-export.
+                        Our hardware design follows some of the ideas used in the Ray. The frame is made from interlocking, laser-cut hardboard for cheap and easy manufacture. Metal rods are used to allow for fine tuning in the positioning of the cameras. A Raspberry Pi model 3 functions as the central control unit, interfacing the stepper, cameras, laser and memory-export.
                     </p>
                     <p>
-                        When plugging in a memory-stick, the scan starts automatically. The scanner uses two cameras to take pictures each of the object (one with the line laser on and one with it off) for each position. A stepper-motor rotates the turn-table with a potential resolution of 0.2 degrees per step. The images are written directly to the memory-stick and taken to the computer for post-processing.
+                        When plugging in a memory-stick, a scan starts automatically. The scanner cameras take two pictures of the object (one with the line laser on and one with it off) for each position. A stepper-motor rotates the turn-table with a potential resolution of 0.2 degrees per step. The images are written directly to the memory-stick and taken to the computer for post-processing.
                     </p>
                     <p>
-                        We have run successful image captures, but we require greater consistency of lighting etc. from the cameras to obtain a good result when converting the images to a point cloud. Work is therefore currently being put into converting the Python-code to lower levels where we have greater control of timing and camera settings.
+                        We have run successful image captures, but we require greater consistency of timing and camera exposure for the generated point cloud to be of a satisfactory quality. Work is therefore currently being put into converting the Python code to lower levels where we have greater control of timing and camera settings.
                     </p>
                 </div>
                 <div class="col-lg-7 col-md-12 feature-content">
@@ -100,28 +120,6 @@
     </div>
 </section>
 
-
-<section id="scanner-rapid" class="feature-light">
-    <div class="container">
-        <div class="row ">
-            <div class="float-lg">
-                <div class="col-lg-7 col-md-12 feature-content">
-                    <img src="/images/scanner/rapid.jpg" class="img-fluid " alt="rapid">
-                </div>
-                <div class="col-lg-5 col-md-12 feature-caption">
-                    <p>
-                        Rapid is a student team at UBC. The group designs and maintains rapid prototyping technologies such as 3d-printers.
-                    </p>
-                    <p>
-                        <a target="_blank" class="btn btn-secondary" href="http://ubc-rapid.com/blog/" role="button">UBC Rapid »</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section id="scanner-team">
     <div class="container">
         <div class="row ">
@@ -131,6 +129,13 @@
                         <img src="/images/scanner/team.jpg" class="img-fluid " alt="ray-team">
                     </a>
                 </div>
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-12 feature-content">
+                <p>
+                    The team working on the scanner. From the left: Jordan Jones, Erik MacLennan, Nolan Heim, Curtis Hubner and me.
+                </p>
             </div>
         </div>
     </div>
