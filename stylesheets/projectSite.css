@@ -207,9 +207,9 @@ img {
 }
 
 #stage.danmark {
-    background: url('/images/stages/danmark.jpg') center center no-repeat;
+    background: url('/images/stages/unicycle.jpg') center center no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 80%;
 }
 
 #stage.speedrider {
@@ -221,7 +221,7 @@ img {
 #stage.jump {
     background: url('/images/stages/jump.jpg') center center no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 90%;
 }
 
 #stage.tandem {
@@ -259,6 +259,24 @@ img {
 
 #stage.scanner {
     background: url('/images/scanner/scanner.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#stage.rc-planes {
+    background: url('/images/stages/alpina.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#stage.pappa-fly {
+    background: url('/images/stages/rc-planes.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#stage.paraglider {
+    background: url('/images/stages/paraglider.jpg') center center no-repeat;
     background-size: cover;
     height: 80%;
 }
