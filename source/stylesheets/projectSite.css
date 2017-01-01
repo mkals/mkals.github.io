@@ -221,7 +221,7 @@ img {
 #stage.jump {
     background: url('/images/stages/jump.jpg') center center no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 90%;
 }
 
 #stage.tandem {
@@ -271,6 +271,12 @@ img {
 
 #stage.pappa-fly {
     background: url('/images/stages/rc-planes.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#stage.paraglider {
+    background: url('/images/stages/paraglider.jpg') center center no-repeat;
     background-size: cover;
     height: 80%;
 }
