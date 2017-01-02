@@ -206,8 +206,8 @@ img {
     height: 100%;
 }
 
-#stage.danmark {
-    background: url('/images/stages/unicycle.jpg') center center no-repeat;
+#stage.electric {
+    background: url('/images/stages/electric.jpg') center center no-repeat;
     background-size: cover;
     height: 80%;
 }
