@@ -281,6 +281,12 @@ img {
     height: 80%;
 }
 
+#stage.unicycle {
+    background: url('/images/stages/unicycle.jpg') center center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
 #stage {
     color: white;
     height: 60%;
