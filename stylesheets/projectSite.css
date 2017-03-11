@@ -182,6 +182,14 @@ img {
     text-align: right;
 }
 
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 
 /* Stages */
 
