@@ -171,6 +171,10 @@ img {
     max-height: 90%;
 }
 
+#ios-image {
+    padding: 4rem;
+}
+
 
 /* Navbar and footer */
 
