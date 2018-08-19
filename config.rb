@@ -56,4 +56,8 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
     
+# Deploy commands:
+# middleman build [--clean]
+# middleman deploy [--build-before]
+
 end
