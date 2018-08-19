@@ -1,0 +1,96 @@
+<a href="/images/stages/aevc.png" data-toggle="lightbox" data-gallery="aevc-gallery" style="text-decoration:none">
+    <div id="stage" class="aevc">
+        <h1 class="display-3">Automated EV Charger</h1>
+    </div>
+</a>
+
+<section id="aevc-intro">
+    <div class="container">
+        <div class="row ">
+            <div class="float-lg">
+                <div class="col-lg-5  col-md-12 feature-caption">
+                    <p>
+                        The Automated Electric Vehicle Charger (AEVC) is a prototype designed to complete the charging process of an electric vehicle from start to finish, fully autonomously.
+                    </p>
+                    <p>
+                        It was designed to navigate environments where EVs are commonly charged, such as household or commercial garages. Using an array of sensors, it aims to detect objects of interest, including obstacles and vehicles to connect to.
+                    </p>
+                    <p>
+                        We were very happy with how the prototype turned out. It is capable of moving to a specified position with accuracy exceeding 98 percent in all 4 degrees of freedom wihout feedback.
+                    </p>
+                </div>
+                <div class="offset-lg-2 col-lg-4 col-md-6 feature-content">
+                    <a href="/images/aevc/full.png" data-toggle="lightbox" data-gallery="aevc-gallery">
+                        <img src="/images/aevc/full.png" class="img-fluid" alt="aevc-main">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="aevc-bards" class="feature-light">
+    <div class="container">
+        <div class="row">
+            <div class="float-lg">
+                <div class="col-md-8 feature-content">
+                    <a href="/images/aevc/boards.png" data-toggle="lightbox" data-gallery="aevc-gallery">
+                        <img src="/images/aevc/boards.png" class="img-fluid " alt="aevc-boards">
+                    </a>
+                </div>
+                <div class="col-md-4 feature-content">
+                    <p>
+                        In order to handle power management and effectively connect peripherals, two PCBs, one in the Hand and one in the Body, were developed.
+                    </p>
+                    <p>
+                        The Body Board’s primary purpose is in handling all power management and communication with the 4 Trinamic motor controllers. A Teensy 3.6 microcontroller is mounted directly to the board. Extra I/O pins are also available for collision switches, endstops, etc.
+                    </p>
+                    <p>
+                        While the Body Board works most closely with the Teensy, this board serves to efficiently extend I/O capabilities of the Raspberry Pi 3. The Hand board is connected to the Pi with a short 14-wire ribbon cable that connects to the I2C bus, power, and GPIO pins.
+                    </p>
+                    <p>
+                        Both boards contain DC-DC buck converters to provide power for the digital components.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="aevc-base">
+    <div class="container">
+        <div class="row">
+            <div class="float-lg">
+                <div class="col-md-4 feature-content">
+                    <p>
+                        The Base interfaces with the ground, allowing the AEVC to move at low speeds, but with suitable precision. Two driven wheels are positioned symmetrically such that the axis of rotation passes directly through the centre of the circular frame. This allows for linear movement, as well as rotation about the central axis. These wheels are driven each by their own motor for individual control.
+                    </p>
+                </div>
+                <div class="col-md-8 feature-content">
+                    <a href="/images/aevc/base.png" data-toggle="lightbox" data-gallery="aevc-gallery">
+                        <img src="/images/aevc/base.png" class="img-fluid " alt="aevc-boards">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="aevc_pdf" class="feature-light">
+    <div class="container">
+        <div class="row">
+            <div class="float-lg">
+                <div class="col-md-12 col-lg-12 feature-caption">
+                    <p align="center">
+                        <object data="/documents/enph-459-final.pdf" type="application/pdf" width="80%" height="800px"> 
+                        </object>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -197,6 +197,14 @@ img {
 
 /* Stages */
 
+#stage.aevc {
+    background: url('/images/stages/aevc.png') center center no-repeat;
+    background-size: 100%;
+    align-items: stretch;
+    padding: 3rem;
+    height: 60%;
+}
+
 #stage.arista {
     background: url('/images/stages/arista_logo.png') center center no-repeat;
     background-size: 60%;
