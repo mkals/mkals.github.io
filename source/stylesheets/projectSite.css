@@ -197,6 +197,15 @@ img {
 
 /* Stages */
 
+#stage.pico-hydro {
+    background: url('/images/stages/pico-hydro.png') center center no-repeat;
+    background-size: 100%;
+    align-items: flex-end;
+    padding: 6rem;
+    height: 90%;
+}
+
+
 #stage.aevc {
     background: url('/images/stages/aevc.png') center center no-repeat;
     background-size: 100%;

@@ -42,8 +42,8 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-page "/coop/*", :layout => "layout"
-page "/coop/*", :layout => "layout"
+page "/Coop/*", :layout => "layout"
+page "/Coop/*", :layout => "layout"
 
 # Deploy gem
 # https://github.com/middleman-contrib/middleman-deploy
