@@ -199,7 +199,7 @@ img {
 
 #stage.pico-hydro {
     background: url('/images/stages/pico-hydro.png') center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     align-items: flex-end;
     padding: 6rem;
     height: 90%;
@@ -208,7 +208,7 @@ img {
 
 #stage.aevc {
     background: url('/images/stages/aevc.png') center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     align-items: stretch;
     padding: 3rem;
     height: 60%;
