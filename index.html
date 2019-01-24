@@ -50,37 +50,41 @@
 <nav class="navbar navbar-full navbar-dark bg-inverse" role="navigation">
     <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
   </button>
-    <a class="navbar-brand" href="/">Morten Kals</a>
+    
+    <a class="navbar-brand" href="/"><span class="navbar-text">
+      Project Site for 
+    </span> Morten Kals</a>
     <div class="collapse navbar-toggleable-sm" id="mynavbar">
         <ul class="nav navbar-nav float-md-right">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Co-op</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/coop/Arista">Arista Networks</a>
-                    <a class="dropdown-item" href="/coop/SINTEF">SINTEF</a>
-                    <a class="dropdown-item" href="/coop/HENT">HENT</a>
+                    <a class="dropdown-item" href="/Coop/Arista">Arista Networks</a>
+                    <a class="dropdown-item" href="/Coop/SINTEF">SINTEF</a>
+                    <a class="dropdown-item" href="/Coop/HENT">HENT</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Team Projects</a>
                 <div class="dropdown-menu">
                     <!-- dropdown-menu-right -->
-                    <a class="dropdown-item" href="/projects/aevc">ENPH 459 Project</a>
-                    <a class="dropdown-item" href="/projects/ray">ENPH 253 Project</a>
-                    <a class="dropdown-item" href="/projects/noober">Noober 3D Printer Hub</a>
-                    <a class="dropdown-item" href="/projects/3d-scanner">Rapid 3D Scanner</a>
-                    <a class="dropdown-item" href="/projects/rc-planes">RC Airplanes</a>
+                    <a class="dropdown-item" href="/Projects/pico-hydro">ENPH 479: Pico Hydro Power</a>
+                    <a class="dropdown-item" href="/Projects/aevc">ENPH 459: EV Charging</a>
+                    <a class="dropdown-item" href="/Projects/ray">ENPH 253: Robotics</a>
+                    <a class="dropdown-item" href="/Projects/noober">Noober 3D Printer Hub</a>
+                    <a class="dropdown-item" href="/Projects/3d-scanner">Rapid 3D Scanner</a>
+                    <a class="dropdown-item" href="/Projects/rc-planes">RC Airplanes</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Personal Projects</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/projects/website">Project Website</a>
-                    <!--<a class="dropdown-item" href="/projects/pi-gimbal">PiGimbal</a>-->
-                    <a class="dropdown-item" href="/projects/race-quad">Race-Quad</a>
-                    <a class="dropdown-item" href="/projects/cam-quad">Cam-Quad</a>
-                    <a class="dropdown-item" href="/projects/3d-printer">3D Printer</a>
-                    <a class="dropdown-item" href="/projects/ios-development">iOS Development</a>
+                    <a class="dropdown-item" href="/Projects/website">Project Website</a>
+                    <!--<a class="dropdown-item" href="/Projectpi-gimbal">PiGimbal</a>-->
+                    <a class="dropdown-item" href="/Projects/race-quad">Race-Quad</a>
+                    <a class="dropdown-item" href="/Projects/cam-quad">Cam-Quad</a>
+                    <a class="dropdown-item" href="/Projects/3d-printer">3D Printer</a>
+                    <a class="dropdown-item" href="/Projects/ios-development">iOS Development</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -98,7 +102,7 @@
             <div class="float-lg">
                 <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1 feature-caption">
                     <h1>Hello!</h1>
-                    <p>My name is Morten Kals, and I am enrolled in the Engineering Physics program at the University of British Columbia (UBC).</p>
+                    <p>My name is Morten Kals, and I am enrolled in the Engineering Physics program at UBC.</p>
                     <p>I made this website to give a sense of who I am and show some of my technical projects.</p>
                     <p>Below is a general overview of related items and links. Use the navbar to access a more comprehensive organization of the contents.</p>
                 </div>
@@ -128,6 +132,31 @@
                     </div>
                 </div>
 
+                <!-- UBC Cources -->
+                <div class="card">
+                    <div class="card-block">
+                        <a target="_blank " href="UBC">
+                            <button type="button" style="width:100% " class="btn btn-primary btn-lg btn-block">My UBC Courses</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pico Hydro -->
+                <div class="card">
+                    <a href="/images/featured/pico-hydro.png" data-toggle="lightbox" data-gallery="source-gallery">
+                        <img class="card-img-top img-fluid" src="/images/featured/pico-hydro.png" alt="Card image cap ">
+                    </a>
+                    <div class="card-block">
+                        <p class="card-text">
+                             The UBC Ecohydrology research group collects data continuously from streams all across the lower mainland to study how land use practices influence interactions between hydrological and ecological processes. For my second Capstone project, I worked on developing a pico hydropower generator that the Ecohydrology group can deploy in remote streams to power their sensor systems. 
+                        </p>
+                        <a href="/Projects/pico-hydro/">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Pico Hydro Power Generator</button>
+                        </a>
+                    </div>
+                </div>
+                
+                
                 <!-- The Ray -->
                 <div class="card">
                     <a href="/images/featured/ray.jpg" data-toggle="lightbox" data-gallery="source-gallery">
@@ -137,7 +166,7 @@
                         <p class="card-text">
                             ENPH 253 is a core robotics-course for the Engineering Physics program at UBC that I took during the summer term of 2016. Teams of four work on a fully automated system to accomplish a specified task in a competitive environment.
                         </p>
-                        <a href="/projects/ray/">
+                        <a href="/Projects/ray/">
                             <button type="button" class="btn btn-primary btn-lg btn-block">The Ray</button>
                         </a>
                     </div>
@@ -181,13 +210,28 @@
                         <p class="card-text">
                             How I got my first 3D printer before I moved to Canada.
                         </p>
-                        <a href="/projects/3d-printer/">
+                        <a href="/Projects/3d-printer/">
                             <button type="button " class="btn btn-primary btn-lg btn-block ">3D Printing</button>
                         </a>
                     </div>
                 </div>
 
-
+                <!-- Arista -->
+                <div class="card ">
+                    <a href="/images/featured/arista.jpg" data-toggle="lightbox" data-gallery="source-gallery">
+                        <img class="card-img-top img-fluid " src="/images/featured/arista.jpg" alt="Card image cap ">
+                    </a>
+                    <div class="card-block ">
+                        <p class="card-text ">
+                            I have had two internships with the hardware team at Arista Networks. 
+                        </p>
+                        <a href="/Coop/Arista/">
+                            <button type="button " class="btn btn-primary btn-lg btn-block">Arista Networks</button>
+                        </a>
+                    </div>
+                </div>
+                
+                
                 <!-- noober -->
                 <div class="card">
                     <a href="/images/featured/noober.jpg" data-toggle="lightbox" data-gallery="source-gallery">
@@ -197,7 +241,7 @@
                         <p class="card-text">
                             Erik and I started an online 3D printer hub through <a target="_blank" href="https://www.3dhubs.com/service/noober">3D Hubs</a> two summers ago. We provide 3D printing services to local Vancouver customers.
                         </p>
-                        <a href="/projects/noober/">
+                        <a href="/Projects/noober/">
                             <button type="button" class="btn btn-primary btn-lg btn-block">Noober 3D Printer Hub</button>
                         </a>
                     </div>
@@ -212,8 +256,24 @@
                         <p class="card-text">
                             An agile 250-class FPV quad-copter, the Race-Quad is designed for precise operation in possibly confined environments.
                         </p>
-                        <a href="/projects/race-quad/">
+                        <a href="/Projects/race-quad/">
                             <button type="button" class="btn btn-primary btn-lg btn-block">Race-Quad</button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Holmestrand -->
+                <div class="card ">
+                    <a href="/images/featured/holmestrand.jpg" data-toggle="lightbox" data-gallery="source-gallery">
+                        <img class="card-img-top img-fluid" src="/images/featured/holmestrand.jpg" alt="Card image cap ">
+                    </a>
+                    <div class="card-block">
+                        <p class="card-text">
+                            My first Co-op term, where I worked as a project engineer with emphasis on quality control.
+                        </p>
+                        <a href="/Coop/HENT/">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Holmestrand Stasjon</button>
                         </a>
                     </div>
                 </div>
@@ -228,27 +288,28 @@
                         <p class="card-text">
                             Areal camera-platform with 1.5 kg potential payload.
                         </p>
-                        <a href="/projects/cam-quad/">
+                        <a href="/Projects/cam-quad/">
                             <button type="button " class="btn btn-primary btn-lg btn-block">Cam-Quad</button>
                         </a>
                     </div>
                 </div>
-
-                <!-- Holmestrand -->
-                <div class="card ">
-                    <a href="/images/featured/holmestrand.jpg" data-toggle="lightbox" data-gallery="source-gallery">
-                        <img class="card-img-top img-fluid" src="/images/featured/holmestrand.jpg" alt="Card image cap ">
+                
+                
+                 <!-- AEVC -->
+                <div class="card">
+                    <a href="/images/featured/aevc.png" data-toggle="lightbox" data-gallery="source-gallery">
+                        <img class="card-img-top img-fluid" src="/images/featured/aevc.png" alt="Card image cap ">
                     </a>
                     <div class="card-block">
                         <p class="card-text">
-                            My first Co-op term, where I worked as a project engineer with emphasis on quality control.
+                            Autonomous electric vehicles will soon need a way to charge without human interactions. For my first Capstone project, I worked to develop a prototype capable of autonomously connecting the charge plug to various electric cars. 
                         </p>
-                        <a href="/coop/holmestrand/">
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Holmestrand Stasjon</button>
+                        <a href="/Projects/aevc/">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Autonomous EV Charger</button>
                         </a>
                     </div>
                 </div>
-
+                
                 <!-- *Sundown -->
                 <div class="card ">
                     <a href="/images/featured/bc.jpg" data-toggle="lightbox" data-gallery="source-gallery">
@@ -261,21 +322,13 @@
                     </div>
                 </div>
 
-                <!-- UBC Cources -->
-                <div class="card">
-                    <div class="card-block">
-                        <a target="_blank " href="ubc">
-                            <button type="button" style="width:100% " class="btn btn-primary btn-lg btn-block">My UBC Courses</button>
-                        </a>
-                    </div>
-                </div>
 
                 <!-- +GTD -->
                 <div class="card card-block">
                     <h4 class="card-title">GTD</h4>
                     <p class="card-text">
-                        Building upon the “Getting Things Done” workflow of David Allen, I am engaged in an ongoing effort to optimise efficiency by adopting and developing my ability to remain on schedule and effectively prioritising efforts between coursework, examinations and projects. </p>
-                    <!-- <a href="/projects/gtd/ ">
+                        Building upon the “Getting Things Done” workflow of David Allen, I am engaged in an ongoing effort to optimise efficiency by adopting and developing my ability to remain on schedule and effectively prioritising efforts between coursework, examinations, and projects. </p>
+                    <!-- <a href="/Projects/gtd/ ">
                         <button type="button " class="btn btn-primary btn-lg btn-block ">More info</button>
                     </a> -->
                 </div>
@@ -289,13 +342,14 @@
                         <p class="card-text ">
                             My first coding experience was with iOS during high-school. I have done multiple projects for the platform, two of which have made their way onto the App Store.
                         </p>
-                        <a href="/projects/ios-development/">
+                        <a href="/Projects/ios-development/">
                             <button type="button " class="btn btn-primary btn-lg btn-block">iOS Development</button>
                         </a>
                     </div>
                 </div>
 
-
+                
+                
                 <!-- +PiGimbal -->
                 <!-- <div class="card ">
                     <img class="card-img-top img-fluid " src="/images/featured/pi-gimbal.jpg " alt="Card image cap ">
@@ -304,7 +358,7 @@
                         <p class="card-text ">
 
                         </p>
-                            <a href="/projects/pi-gimbal/ ">
+                            <a href="/Projects/pi-gimbal/ ">
                             <button type="button " class="btn btn-primary btn-lg btn-block ">More info</button>
                         </a> 
                     </div>
