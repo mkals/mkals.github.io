@@ -43,8 +43,9 @@ configure :build do
   # activate :minify_javascript
 
 page "/Coop/*", :layout => "layout"
-page "/Coop/*", :layout => "layout"
+#page "/flightlogger/*", :layout => "lay"
 
+    
 # Deploy gem
 # https://github.com/middleman-contrib/middleman-deploy
 activate :deploy do |deploy|
